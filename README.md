@@ -1,6 +1,6 @@
 # Routing
 
-![Результат]https://github.com/sunmeat/angular-routing/blob/master/results.png?raw=true)
+![Результат](https://github.com/sunmeat/angular-routing/blob/master/results.png)
 
 [Смотреть видео-демонстрацию](https://youtu.be/ZFLuOCMqB90)
 
