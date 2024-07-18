@@ -6,8 +6,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.5.
 
-основные изменения были внесены в файлы:
-main.ts 
-app.routes.ts (массив routes)
-app.component.html (<router-outlet>)
-2 компонента (cards-conteiner, card-block)
+основные изменения были внесены в файлы:<br />
+main.ts <br />
+app.routes.ts (массив routes)<br />
+app.component.html (<router-outlet>)<br />
+2 компонента (cards-conteiner, card-block)<br />
