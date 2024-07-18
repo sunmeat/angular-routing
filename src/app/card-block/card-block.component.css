@@ -1,0 +1,151 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.product-card {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-size: 16px;
+    margin-top: 8px;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.product-title:hover {
+    color: #4f32e3;
+    text-shadow: 0 0 0px rgba(79, 50, 227, 0.5);
+}
+
+.product-description {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.product-price {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #e91e63;
+}
+
+.add-to-cart-button {
+    background-color: #4f32e3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #3a26b7;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    .product-card {
+        max-width: none;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 12px;
+    }
+
+    .product-price {
+        font-size: 14px;
+    }
+
+    .add-to-cart-button {
+        padding: 8px 12px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+
+.product-card .ngcontent-wrapper {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #FFF;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .ngcontent-wrapper:hover {
+    background-color: #FFF;
+}
+
+.like-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.like-button i {
+    color: #e91e63;
+    font-size: 20px;
+}
+
+.like-button:hover i {
+    color: #af1447;
+}
+
+.like-button:active i {
+    color: #fffb00;
+}
+
+.like-button.active i {
+    color: #e98a1e;
+}

@@ -1,0 +1,9 @@
+<div class="product-card">
+    <img [src]="product.imageUrl" alt="{{product.title}}" class="product-image">
+    <h3 class="product-title">{{ product.name }}</h3>
+    <p class="product-price">{{ priceWithDiscount }}₴</p>
+    <button class="add-to-cart-button" (click)="onSelect()">Ознайомитися</button>
+    <div class="ngcontent-wrapper">
+        <ng-content></ng-content> <!-- ng-content для передачи b-тега -->
+    </div>
+</div>

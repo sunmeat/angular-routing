@@ -1,0 +1,17 @@
+<div class="discount-button-container">
+    <button class="discount-button" (click)="applyDiscount()">Хочу знижку!</button>
+  </div>
+
+<div class="product-list">
+    <div *ngFor="let product of products">
+      <app-card-block [product]="product" (select)="selectProduct(product)">
+        <b>{{ product.color }}</b>
+      </app-card-block>
+    </div>
+  </div>
+  
+  <div class="product-detail" *ngIf="selectedProduct">
+    <h2>{{ selectedProduct.name }}</h2>
+    <p>{{ selectedProduct.description }}</p>
+    <p>Цiна: {{ discountApplied ? selectedProduct.price - 15 : selectedProduct.price }}₴</p>
+  </div>
